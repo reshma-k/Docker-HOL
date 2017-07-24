@@ -100,7 +100,7 @@
             "type": "securestring"
         },
         "managerCount": {
-            "defaultValue": 3,
+            "defaultValue": 5,
             "type": "int"
         },
         "managerVMSize": {
@@ -125,7 +125,7 @@
             "type": "string"
         },
         "workerCount": {
-            "defaultValue": 2,
+            "defaultValue": 3,
             "metadata": {
                 "description": "Number of Worker nodes"
             },
@@ -145,6 +145,7 @@
         "storageApiVersion": "2015-06-15",
         "storageAccountNameCloudbees": "[concat('cbstor',variables('uniqueString'))]",
         "storageAccountType": "Standard_LRS",
+        "storageAccountType1": "Premium_LRS",
         "virtualNetworkName": "MyVnet",
         "virtualNetworkAddressPrefix": "10.0.0.0/16",
         "jenkinsSubnetName": "jenkins-subnet",
@@ -283,7 +284,7 @@
                         "value": "[variables('storageApiVersion')]"
                     },
                     "storageAccountType": {
-                        "value": "[variables('storageAccountType')]"
+                        "value": "[variables('storageAccountType1')]"
                     },
                     "location":{
                         "value": "[parameters('location')]"
