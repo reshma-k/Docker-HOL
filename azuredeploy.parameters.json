@@ -1,0 +1,64 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westus"
+        },
+        "jenkinsDnsNameForPublicIP": {
+            "value": "ocdns"
+        },
+        "jenkinsUsername": {
+            "value": "jenkinsuser"
+        },
+        "jenkinsPassword": {
+            "value": "Password@1234"
+        },
+        "jenkinsAdminPassword": {
+            "value": "Password@1234"
+        },
+        "size": {
+            "value": "Project"
+        },
+        "baseUrl": {
+            "value": "https://raw.githubusercontent.com/sysgain/Docker-HOL/master"
+        },
+        "ddcLicenseKey": {
+            "value": {
+                "key_id": "FFQE91FQKsQafUY3EsNAkIBFcMegyE99Ve6ncFipi1wb",
+                "private_key": "HuD2kgTOVDpj1sEEMytnvD6VluK4iw5Eru84cvbe8Pm4",
+                "authorization": "ewogICAicGF5bG9hZCI6ICJleUpsZUhCcGNtRjBhVzl1SWpvaU1qQXhOeTB3T1Mwd04xUXlNem94TkRvek1sb2lMQ0owYjJ0bGJpSTZJbEpXWmxadk5GZE1YM2RzY0daaVEwWnpYekZLUmpaZmMzUjZTVVUzYlRGQlVuSmFiVTR3WldkbGRsRTlJaXdpYldGNFJXNW5hVzVsY3lJNk1UQXNJbk5qWVc1dWFXNW5SVzVoWW14bFpDSTZkSEoxWlN3aWJHbGpaVzV6WlZSNWNHVWlPaUpQWm1ac2FXNWxJaXdpZEdsbGNpSTZJa1YyWVd4MVlYUnBiMjRpZlEiLAogICAic2lnbmF0dXJlcyI6IFsKICAgICAgewogICAgICAgICAiaGVhZGVyIjogewogICAgICAgICAgICAiandrIjogewogICAgICAgICAgICAgICAiZSI6ICJBUUFCIiwKICAgICAgICAgICAgICAgImtleUlEIjogIko3TEQ6NjdWUjpMNUhaOlU3QkE6Mk80Rzo0QUwzOk9GMk46SkhHQjpFRlRIOjVDVlE6TUZFTzpBRUlUIiwKICAgICAgICAgICAgICAgImtpZCI6ICJKN0xEOjY3VlI6TDVIWjpVN0JBOjJPNEc6NEFMMzpPRjJOOkpIR0I6RUZUSDo1Q1ZROk1GRU86QUVJVCIsCiAgICAgICAgICAgICAgICJrdHkiOiAiUlNBIiwKICAgICAgICAgICAgICAgIm4iOiAieWRJeS1sVTdvN1BjZVktNC1zLUNRNU9FZ0N5RjhDeEljUUlXdUs4NHBJaVpjaVk2NzMweUNZbndMU0tUbHctVTZVQ19RUmVXUmlvTU5ORTVEczVUWUVYYkdHNm9sbTJxZFdiQndjQ2ctMlVVSF9PY0I5V3VQNmdSUEhwTUZNc3hEeld3dmF5OEpVdUhnWVVMVXBtMUl2LW1xN2xwNW5RX1J4clQwS1pSQVFUWUxFTUVmR3dtM2hNT19nZUxQUy1oZ0tQdElIbGtnNl9XY294VEdvS1A3OWRfd2FIWXhHTmw3V2hTbmVpQlN4YnBiUUFLazIxbGc3OThYYjd2WnlFQVRETXJSUjlNZUU2QWRqNUhKcFkzQ295UkFQQ21hS0dSQ0s0dW9aU29JdTBoRlZsS1VQeWJidzAwMEdPLXdhMktOOFV3Z0lJbTBpNUkxdVc5R2txNHpqQnk1emhncXVVWGJHOWJXUEFPWXJxNVFhODFEeEdjQmxKeUhZQXAtRERQRTlUR2c0elltWGpKbnhacUhFZHVHcWRldlo4WE1JMHVrZmtHSUkxNHdVT2lNSUlJclhsRWNCZl80Nkk4Z1FXRHp4eWNaZV9KR1gtTEF1YXlYcnlyVUZlaFZOVWRaVWw5d1hOYUpCLWthQ3F6NVF3YVI5M3NHdy1RU2Z0RDBOdkxlN0N5T0gtRTZ2ZzZTdF9OZVR2Z3Y4WW5oQ2lYSWxaOEhPZkl3TmU3dEVGX1VjejVPYlB5a20zdHlsck5VanQwVnlBbXR0YWNWSTJpR2loY1VQcm1rNGxWSVo3VkRfTFNXLWk3eW9TdXJ0cHNQWGNlMnBLRElvMzBsSkdoT18zS1VtbDJTVVpDcXpKMXlFbUtweXNINUhEVzljc0lGQ0EzZGVBamZaVXZON1UiCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgICJhbGciOiAiUlMyNTYiCiAgICAgICAgIH0sCiAgICAgICAgICJzaWduYXR1cmUiOiAid0VJSEtUcUMyZFVZb3dKelJGQ1V6REwwZVJpbzF6b2V2dy1veVZJbUlGZFhONXg1WmtGM3pZU3E3a2tJNTR2Q0EydHdiQjJYVkxsR3V0OEtWT3Jsd29XWHROQnVPS0MzRUNaTWJWQ2E3NnhDODFGWEttN05HbDZlSE9ubW9tbDV3b3FlNmJnTzFvek05bTRNS0hqeEhmeHFwRUxnS0RqcW9QSEN5MlpiN0NPNEtEaGozbmZHWThMWFZOaEtobHdZUXhOVTJaM09fWGxua29lcFVNbU5TWlZVS3RjS1M4WUJLZVhrc3h1WjYtU2laQXl4Q19tZldHZHQzTGtvSW5kRVIxVURpTjh5alVaU3VIdC1TQkJsM2VTSjlWTmJ2a2dzdFFuNWZjNV9wLWVlTXl1YkVqaWN4Zk13N1RaQjBISTR4T015eGJ4ckRmRDBLeVhNa1FfSFRLSjBBbXBRb2pJLUNRMVJSYjJUVkZpTmxhbHRmSkNObm9jQVZFd1lUbzBVc0phanJyNFhYWEFjWUZ0RWpZOHBndFExRzAwMFhfVTNlejlEbzk1OGsxdkpnSFR1YlFxMEtxRnNiM1h6aE00NEJ2YXludl8yVG1BVlFqSlZmWVV4U2tVZGkzYXZyTUkyNWt4YjdxbXN5Rk81OU43T2lPaEhqOFlfMEE3RmNhWFpUYl91UVoyVk5EanV6NVdlUTZjR2t6REpsZHIwVDQ2dnpYdnRJQW1tTWF2YlVpTDVjTV8zN01kOE9kbkQza2FJOThBakJPWmpQVjJETnZwS045bV9xeWRmY0wyaU8tRTZ2VnRzQjFZXzFwZWg5QlRrVnljdk9FQmQxZFR3VGJrU2RmQjNMMlRMVFVHRGdMNk1XcWoxbURac0JzYi13aHAyVktWRlZ0STZRcTgiLAogICAgICAgICAicHJvdGVjdGVkIjogImV5Sm1iM0p0WVhSTVpXNW5kR2dpT2pFM05Dd2labTl5YldGMFZHRnBiQ0k2SW1aUklpd2lkR2x0WlNJNklqSXdNVGN0TURNdE1UTlVNVGs2TVRRNk1EQmFJbjAiCiAgICAgIH0KICAgXQp9"
+            }
+        },
+        "ddcPassword": {
+            "value": "Password@1234"
+        },
+        "ddcUsername": {
+            "value": "ddcadmin"
+        },
+        "adServicePrincipalAppID": {
+            "value": "84129d8b-56e4-4f07-8445-6a194024972a"
+        },
+        "adServicePrincipalAppSecret": {
+            "value": "8JRDq+8ZvPvkTNIF5YmJ9m/Crw63su+4YLvfQuWb22M="
+        },
+        "managerCount": {
+            "value": 5
+        },
+        "managerVMSize": {
+            "value": "Standard_DS3"
+        },
+        "sshPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCb8UFXuRg60oBBYkPO45cTlfLxbf32t9OlZ9L5EQaSqaFoSvDTyDJzuMuKe8XDGqu/I5fBm+5YWsX7efKI4BHQk7WQbDjdzueobooGHDl9nPFhhsLrtZBWIJ4t5SQfoTMI3HGnhVpUseyfOF9bqbFQGGZk\r\nA+zNPzM2bJOr1pU01A4cer+aD7qrrSfzd3hUp6px7Fy02ui7FxX2oq8SUrCvKAavvOv/XeLsn1d/MIJRqxOENZURwq3yCsWivUJ68OPNS0uGFd0fH0DgTUXTLuLYr5ilSry88J3RFoKSW1trMoGU6y/H31hPFnAt7rjzMRdtdL4rV2+efPsDx07WhoUD sri\r\nkala@cc-dcf9-a15245f3-4016727739-xgtkm"
+        },
+        "swarmName": {
+            "value": "dockerswarm"
+        },
+        "workerCount": {
+            "value": 3
+        },
+        "workerVMSize": {
+            "value": "Standard_D2_v2"
+        }
+    }
+}
