@@ -375,14 +375,6 @@
             "type": "string",
             "value": "[reference('cloudbeesDeployment').outputs.jenkinsfqdn.value]"
         },
-        "Jenkins Portal Username": {
-            "type": "string",
-            "value": "[reference('cloudbeesDeployment').outputs.jenkinsApplicationUsername.value]"
-        },
-        "Jenkins Portal Password": {
-            "type": "string",
-            "value": "[reference('cloudbeesDeployment').outputs.jenkinsApplicationPassword.value]"
-        },
         "DTRLoginURL": {
             "type": "string",
             "value": "[reference('dockerDatacenterDeployment').outputs.DTRLoginURL.value]"
@@ -390,14 +382,6 @@
         "UCPLoginURL": {
             "type": "string",
             "value": "[reference('dockerDatacenterDeployment').outputs.UCPLoginURL.value]"
-        },
-        "UCPLoginUsername":{
-            "type": "string",
-            "value": "[parameters('ddcUsername')]"
-        },
-        "UCPLoginPassword":{
-            "type": "string",
-            "value": "[parameters('ddcPassword')]"
         }
     }
 }
