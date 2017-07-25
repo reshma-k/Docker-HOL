@@ -43,7 +43,7 @@
             "value": "8JRDq+8ZvPvkTNIF5YmJ9m/Crw63su+4YLvfQuWb22M="
         },
         "managerCount": {
-            "value": 5
+            "value": 3
         },
         "managerVMSize": {
             "value": "Standard_DS3"
@@ -55,7 +55,7 @@
             "value": "dockerswarm"
         },
         "workerCount": {
-            "value": 3
+            "value": 5
         },
         "workerVMSize": {
             "value": "Standard_D2_v2"
