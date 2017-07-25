@@ -100,7 +100,7 @@
             "type": "securestring"
         },
         "managerCount": {
-            "defaultValue": 5,
+            "defaultValue": 3,
             "type": "int"
         },
         "managerVMSize": {
@@ -125,7 +125,7 @@
             "type": "string"
         },
         "workerCount": {
-            "defaultValue": 3,
+            "defaultValue": 5,
             "metadata": {
                 "description": "Number of Worker nodes"
             },
