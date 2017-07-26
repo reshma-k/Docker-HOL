@@ -24,7 +24,7 @@ services:
       placement:
         constraints: [node.role == manager]
   vote:
-    image: dtrlb-4l77ngfq7bc46.westus.cloudapp.azure.com/admin/voting-app-vote:latest
+    image: dtrlb-y5e6urbmgshym.westus.cloudapp.azure.com/admin/voting-app-vote:latest
     ports:
       - 0000:80
     networks:
@@ -38,7 +38,7 @@ services:
       restart_policy:
         condition: on-failure
   result:
-    image: dtrlb-4l77ngfq7bc46.westus.cloudapp.azure.com/admin/voting-app-result:latest
+    image: dtrlb-y5e6urbmgshym.westus.cloudapp.azure.com/admin/voting-app-result:latest
     ports:
       - 0001:80
     networks:
@@ -52,7 +52,7 @@ services:
         condition: on-failure
 
   worker:
-    image: dtrlb-4l77ngfq7bc46.westus.cloudapp.azure.com/admin/voting-app-worker:latest
+    image: dtrlb-y5e6urbmgshym.westus.cloudapp.azure.com/admin/voting-app-worker:latest
     networks:
       - frontend
       - backend
