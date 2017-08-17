@@ -50,12 +50,12 @@
         "storageAccountType": {
             "type": "string"
         },
-        "location":{
+        "location": {
             "type": "string"
         }
     },
     "variables": {
-        "Description": "Docker EE for Azure 17.03.1-ee (azure2)",
+        "Description": "Docker EE for Azure 17.03.2-ee-5-azure1",
         "DockerProviderTag": "8CF0E79C-DF97-4992-9B59-602DB544D354",
         "accountID": "[subscription().subscriptionId]",
         "adServicePrincipalAppID": "[parameters('adServicePrincipalAppID')]",
@@ -64,13 +64,18 @@
         "adminUsername": "docker",
         "apiVersion": "2016-03-30",
         "basePrefix": "[parameters('swarmName')]",
-        "customData": "[concat('export ACCOUNT_ID=\"', variables('accountID'), '\"', '\n', 'export REGION=\"', variables('storageLocation'), '\"', '\n', 'export SUB_ID=\"', variables('accountID'), '\"', '\n', 'export GROUP_NAME=\"', variables('groupName'), '\"', '\n', 'export LB_NAME=\"', variables('lbName'), '\"', '\n', 'export APP_ID=\"', variables('adServicePrincipalAppID'), '\"', '\n', 'export APP_SECRET=\"', variables('adServicePrincipalAppSecret'), '\"', '\n', 'export TENANT_ID=\"', variables('adServicePrincipalTenantID'), '\"', '\n', 'export SWARM_INFO_STORAGE_ACCOUNT=\"', variables('swarmInfoStorageAccount'), '\"', '\n', 'export SWARM_LOGS_STORAGE_ACCOUNT=\"', variables('swarmLogsStorageAccount'), '\"', '\n', 'export PRIVATE_IP=$(ifconfig eth0 | grep \"inet addr:\" | cut -d: -f2 | cut -d\" \" -f1)\n', 'export AZURE_HOSTNAME=$(hostname)\n', '\n', 'export UCP_ORG=docker ; export UCP_TAG=2.1.4 ; export DTR_ORG=docker ; export DTR_TAG=2.2.4; ',  'docker run --label com.docker.editions.system --log-driver=json-file --restart=no -it -e LB_NAME -e SUB_ID -e ROLE -e REGION -e TENANT_ID -e APP_ID -e APP_SECRET -e ACCOUNT_ID -e GROUP_NAME -e PRIVATE_IP -e DOCKER_FOR_IAAS_VERSION -e SWARM_INFO_STORAGE_ACCOUNT -e SWARM_LOGS_STORAGE_ACCOUNT -e AZURE_HOSTNAME -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker -v /var/lib/docker:/var/lib/docker -v /var/log:/var/log docker4x/init-azure:\"$DOCKER_FOR_IAAS_VERSION\"\n', '\n', 'export MANAGER_COUNT=\"', variables('managerCount'), '\"', '\n', 'export WORKER_COUNT=\"', variables('workerCount'), '\"', '\n', 'export DTR_STORAGE_ACCOUNT=\"', variables('dtrStorageAccount'), '\"', '\n', 'export UCP_ADMIN_USER=\"', variables('ddcUser'), '\"', '\n', 'export UCP_ADMIN_PASSWORD=\"', variables('ddcPass'), '\"', '\n', 'export UCP_LICENSE=\"', variables('ddcLicense'), '\"', '\n', 'export APP_ELB_HOSTNAME=\"', variables('extlbname'), '\"', '\n', 'export UCP_ELB_HOSTNAME=\"', variables('ucplbname'), '\"', '\n', 'export DTR_ELB_HOSTNAME=\"', variables('dtrlbname'), '\"', '\n', '\n', 'docker run --log-driver=json-file --restart=no -d -e LB_NAME -e SUB_ID -e ROLE -e REGION -e TENANT_ID -e APP_ID -e APP_SECRET -e ACCOUNT_ID -e GROUP_NAME -e PRIVATE_IP -e DOCKER_FOR_IAAS_VERSION -e SWARM_INFO_STORAGE_ACCOUNT -e SWARM_LOGS_STORAGE_ACCOUNT -e AZURE_HOSTNAME -e APP_ELB_HOSTNAME -e UCP_ELB_HOSTNAME -e DTR_ELB_HOSTNAME -e DTR_STORAGE_ACCOUNT -e MANAGER_COUNT -e WORKER_COUNT -e UCP_ADMIN_USER -e UCP_ADMIN_PASSWORD -e UCP_LICENSE -e UCP_TAG -e DTR_TAG -e UCP_ORG -e DTR_ORG  -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker -v /var/lib/docker:/var/lib/docker -v /var/log:/var/log -v /tmp/docker:/tmp/docker $UCP_ORG/ucp-init-azure:2.1.0\n')]",
+        "channel": "stable-ddc",
+        "customData": "[concat('export ACCOUNT_ID=\"', variables('accountID'), '\"', '\n', 'export REGION=\"', variables('storageLocation'), '\"', '\n', 'export SUB_ID=\"', variables('accountID'), '\"', '\n', 'export GROUP_NAME=\"', variables('groupName'), '\"', '\n', 'export LB_NAME=\"', variables('lbName'), '\"', '\n', 'export APP_ID=\"', variables('adServicePrincipalAppID'), '\"', '\n', 'export APP_SECRET=\"', variables('adServicePrincipalAppSecret'), '\"', '\n', 'export TENANT_ID=\"', variables('adServicePrincipalTenantID'), '\"', '\n', 'export SWARM_INFO_STORAGE_ACCOUNT=\"', variables('swarmInfoStorageAccount'), '\"', '\n', 'export SWARM_LOGS_STORAGE_ACCOUNT=\"', variables('swarmLogsStorageAccount'), '\"', '\n', 'export PRIVATE_IP=$(ifconfig eth0 | grep \"inet addr:\" | cut -d: -f2 | cut -d\" \" -f1)\n', 'export AZURE_HOSTNAME=$(hostname)\n', '\n', 'docker run --label com.docker.editions.system --log-driver=json-file --restart=no -it -e LB_NAME -e SUB_ID -e ROLE -e REGION -e TENANT_ID -e APP_ID -e APP_SECRET -e ACCOUNT_ID -e GROUP_NAME -e PRIVATE_IP -e DOCKER_FOR_IAAS_VERSION -e SWARM_INFO_STORAGE_ACCOUNT -e SWARM_LOGS_STORAGE_ACCOUNT -e AZURE_HOSTNAME -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker -v /var/lib/docker:/var/lib/docker -v /var/log:/var/log docker4x/init-azure:\"$DOCKER_FOR_IAAS_VERSION\"\n', '\n', 'export MANAGER_COUNT=\"', variables('managerCount'), '\"', '\n', 'export WORKER_COUNT=\"', variables('workerCount'), '\"', '\n', 'export DTR_STORAGE_ACCOUNT=\"', variables('dtrStorageAccount'), '\"', '\n', 'export UCP_ADMIN_USER=\"', variables('ddcUser'), '\"', '\n', 'export UCP_ADMIN_PASSWORD=\"', variables('ddcPass'), '\"', '\n', 'export UCP_LICENSE=\"', variables('ddcLicense'), '\"', '\n', 'export APP_ELB_HOSTNAME=\"', variables('extlbname'), '\"', '\n', 'export UCP_ELB_HOSTNAME=\"', variables('ucplbname'), '\"', '\n', 'export DTR_ELB_HOSTNAME=\"', variables('dtrlbname'), '\"', '\n', 'export UCP_TAG=\"', variables('ucpTag'), '\"', '\n', 'export DTR_TAG=\"', variables('dtrTag'), '\"', '\n', '\n', 'docker run --log-driver=json-file --restart=on-failure:5 -d -e LB_NAME -e SUB_ID -e ROLE -e REGION -e TENANT_ID -e APP_ID -e APP_SECRET -e ACCOUNT_ID -e GROUP_NAME -e PRIVATE_IP -e DOCKER_FOR_IAAS_VERSION -e SWARM_INFO_STORAGE_ACCOUNT -e SWARM_LOGS_STORAGE_ACCOUNT -e AZURE_HOSTNAME -e APP_ELB_HOSTNAME -e UCP_ELB_HOSTNAME -e DTR_ELB_HOSTNAME -e UCP_TAG -e DTR_TAG -e DTR_STORAGE_ACCOUNT -e MANAGER_COUNT -e WORKER_COUNT -e UCP_ADMIN_USER -e UCP_ADMIN_PASSWORD -e UCP_LICENSE -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker -v /var/lib/docker:/var/lib/docker -v /var/log:/var/log -v /tmp/docker:/tmp/docker docker4x/ddc-init-azure:$DOCKER_FOR_IAAS_VERSION\n')]",
         "ddcLicense": "[base64(string(parameters('ddcLicenseKey')))]",
         "ddcPass": "[parameters('ddcPassword')]",
         "ddcUser": "[parameters('ddcUsername')]",
+        "ucpTag": "2.1.5",
+        "dtrTag": "2.2.7",
+        "docker": "17.03.2-ee-5",
         "dtrLbPublicIpDnsName": "[concat('dtrlb-', uniqueString(resourceGroup().name))]",
         "dtrStorageAccount": "[concat(uniqueString(concat(resourceGroup().id, variables('storageAccountSuffix'))), 'dtr')]",
         "dtrlbname": "[concat(variables('dtrLbPublicIpDnsName'), '.', variables('storageLocation'), '.cloudapp.azure.com')]",
+        "editionAddOn": "ddc",
         "extlbname": "[concat(variables('lbPublicIpDnsName'), '.', variables('storageLocation'), '.cloudapp.azure.com')]",
         "groupName": "[resourceGroup().name]",
         "imageReference": {
@@ -100,11 +105,13 @@
         "managerVMSize": "[parameters('managerVMSize')]",
         "natSSHEndPort": 50100,
         "natSSHStartPort": 50000,
+        "portalFQDN": "portal.azure.com",
         "sshKeyPath": "[concat('/home/', variables('adminUsername'), '/.ssh/authorized_keys')]",
         "sshRSAPublicKey": "[parameters('sshPublicKey')]",
         "storageAccountSuffix": "docker",
         "storageLocation": "[parameters('location')]",
         "swarmInfoStorageAccount": "[concat(variables('uniqueStringArray')[0], variables('storageAccountSuffix'))]",
+        "swarmInfoTable": "swarminfo",
         "swarmLogsStorageAccount": "[concat(uniqueString(concat(resourceGroup().id, variables('storageAccountSuffix'))), 'logs')]",
         "ucpLbPublicIpDnsName": "[concat('ucplb-', uniqueString(resourceGroup().name))]",
         "ucplbname": "[concat(variables('ucpLbPublicIpDnsName'), '.', variables('storageLocation'), '.cloudapp.azure.com')]",
@@ -186,7 +193,7 @@
                                     "ipConfigurations": [
                                         {
                                             "name": "mgripconfig",
-                                            "privateIPAllocationMethod": "dynamic",
+                                            "privateIPAllocationMethod": "Dynamic",
                                             "properties": {
                                                 "loadBalancerBackendAddressPools": [
                                                     {
@@ -454,7 +461,7 @@
                             },
                             "frontendPortRangeEnd": "[variables('natSSHEndPort')]",
                             "frontendPortRangeStart": "[variables('natSSHStartPort')]",
-                            "protocol": "tcp"
+                            "protocol": "Tcp"
                         }
                     }
                 ],
@@ -465,7 +472,7 @@
                             "backendAddressPool": {
                                 "id": "[concat(variables('lbSSHID'), '/backendAddressPools/default')]"
                             },
-                            "backendPort": 8443,
+                            "backendPort": 12390,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
                                 "id": "[variables('lbSSHFrontEndIPConfigID')]"
@@ -475,16 +482,16 @@
                             "probe": {
                                 "id": "[concat(variables('lbSSHID'),'/probes/ucp')]"
                             },
-                            "protocol": "tcp"
+                            "protocol": "Tcp"
                         }
                     },
                     {
-                        "name": "dtrLbRule",
+                        "name": "dtrLbRuleHTTPS",
                         "properties": {
                             "backendAddressPool": {
                                 "id": "[concat(variables('lbSSHID'), '/backendAddressPools/default')]"
                             },
-                            "backendPort": 443,
+                            "backendPort": 12391,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
                                 "id": "[variables('lbDTRFrontEndIPConfigID')]"
@@ -494,7 +501,26 @@
                             "probe": {
                                 "id": "[concat(variables('lbSSHID'),'/probes/dtr')]"
                             },
-                            "protocol": "tcp"
+                            "protocol": "Tcp"
+                        }
+                    },
+                    {
+                        "name": "dtrLbRuleHTTP",
+                        "properties": {
+                            "backendAddressPool": {
+                                "id": "[concat(variables('lbSSHID'), '/backendAddressPools/default')]"
+                            },
+                            "backendPort": 12392,
+                            "enableFloatingIP": false,
+                            "frontendIPConfiguration": {
+                                "id": "[variables('lbDTRFrontEndIPConfigID')]"
+                            },
+                            "frontendPort": 80,
+                            "idleTimeoutInMinutes": 5,
+                            "probe": {
+                                "id": "[concat(variables('lbSSHID'),'/probes/dtr80')]"
+                            },
+                            "protocol": "Tcp"
                         }
                     }
                 ],
@@ -509,21 +535,30 @@
                         }
                     },
                     {
-                        "name": "ucp",
+                        "name": "ucp443",
                         "properties": {
                             "intervalInSeconds": 10,
                             "numberOfProbes": 2,
-                            "port": 8443,
-                            "protocol": "tcp"
+                            "port": 12390,
+                            "protocol": "Tcp"
                         }
                     },
                     {
-                        "name": "dtr",
+                        "name": "dtr443",
                         "properties": {
                             "intervalInSeconds": 10,
                             "numberOfProbes": 2,
-                            "port": 443,
-                            "protocol": "tcp"
+                            "port": 12391,
+                            "protocol": "Tcp"
+                        }
+                    },
+                    {
+                        "name": "dtr80",
+                        "properties": {
+                            "intervalInSeconds": 10,
+                            "numberOfProbes": 2,
+                            "port": 12392,
+                            "protocol": "Tcp"
                         }
                     }
                 ]
