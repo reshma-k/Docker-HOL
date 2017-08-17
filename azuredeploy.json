@@ -371,7 +371,7 @@
         }
     ],
     "outputs": {
-        "Jenkins fqdn&Url":{
+        "JenkinsFqdn&Url":{
             "type": "string",
             "value": "[reference('cloudbeesDeployment').outputs.jenkinsfqdn.value]"
         },
