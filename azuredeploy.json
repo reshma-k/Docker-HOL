@@ -182,7 +182,7 @@
             "dockerImageOffer": "docker-ee",
             "dockerImagePublisher": "docker",
             "dockerImageSku": "docker-ee",
-            "dockerImageVersion": "1.0.2"
+            "dockerImageVersion": "1.0.5"
         }
     },
     "resources": [
@@ -229,7 +229,7 @@
             "name": "dockerDatacenterDeployment",
             "type": "Microsoft.Resources/deployments",
             "dependsOn": [
-                "['Microsoft.Resources/deployments/virtualNetworkDeployment']"
+                "Microsoft.Resources/deployments/virtualNetworkDeployment"
             ],
             "properties": {
                 "mode": "Incremental",
@@ -297,7 +297,7 @@
             "name": "cloudbeesDeployment",
             "type": "Microsoft.Resources/deployments",
             "dependsOn": [
-                "['Microsoft.Resources/deployments/virtualNetworkDeployment']"
+                "Microsoft.Resources/deployments/virtualNetworkDeployment"
             ],
             "properties": {
                 "mode": "Incremental",
