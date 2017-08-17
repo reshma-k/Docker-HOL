@@ -480,7 +480,7 @@
                             "frontendPort": 443,
                             "idleTimeoutInMinutes": 5,
                             "probe": {
-                                "id": "[concat(variables('lbSSHID'),'/probes/ucp')]"
+                                "id": "[concat(variables('lbSSHID'),'/probes/ucp443')]"
                             },
                             "protocol": "Tcp"
                         }
@@ -499,7 +499,7 @@
                             "frontendPort": 443,
                             "idleTimeoutInMinutes": 5,
                             "probe": {
-                                "id": "[concat(variables('lbSSHID'),'/probes/dtr')]"
+                                "id": "[concat(variables('lbSSHID'),'/probes/dtr443')]"
                             },
                             "protocol": "Tcp"
                         }
