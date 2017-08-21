@@ -106,9 +106,9 @@
                 "description": "Subnet Name"
             }
         },
-          "virtualNetworkName":{
+        "virtualNetworkName": {
             "type": "string"
-          },
+        },
         "scriptUrl": {
             "type": "string"
         },
@@ -598,7 +598,7 @@
             "value": "[variables('FQdns')]",
             "type": "string"
         },
-        "jenkinsfqdn":{
+        "jenkinsfqdn": {
             "type": "string",
             "value": "[concat('jenkins-0-',variables('dns'),'.', variables('location'), '.cloudapp.azure.com')]"
         },
