@@ -90,13 +90,13 @@
                 "description": "AD ServicePrincipal App ID"
             },
             "type": "string",
-            "defaultValue": "8dd7d328-2bdb-4389-9085-5733171b54a0"
+            "defaultValue": "c2f03944-b80f-420d-9c90-37f4f5ed9459"
         },
         "adServicePrincipalAppSecret": {
             "metadata": {
                 "description": "AD ServicePrincipal App Secret"
             },
-            "defaultValue": "3RNqdfe8mtsD4vYQFWog6s+iqBKjy4+ELUpPOYNyJgo=",
+            "defaultValue": "k7KsOwAFfwmx1LQfZLdD1EalooFFlw/UFlZlIyMCYyo=",
             "type": "securestring"
         },
         "managerCount": {
