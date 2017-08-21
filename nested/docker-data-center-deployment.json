@@ -3449,7 +3449,7 @@
     ],
     "outputs": {
         "DTRLoginURL": {
-            "type": "String",
+            "type": "string",
             "value": "[concat('https://', reference(resourceId('Microsoft.Network/publicIPAddresses', variables('lbDTRPublicIPAddressName'))).dnsSettings.fqdn)]"
         },
         "DefaultDNSTarget": {
@@ -3461,7 +3461,7 @@
             "value": "[concat('https://portal.azure.com/#resource/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Network/loadBalancers/', variables('lbSSHName'), '/inboundNatRules')]"
         },
         "UCPLoginURL": {
-            "type": "String",
+            "type": "string",
             "value": "[concat('https://', reference(resourceId('Microsoft.Network/publicIPAddresses', variables('lbSSHPublicIPAddressName'))).dnsSettings.fqdn)]"
         }
     }
