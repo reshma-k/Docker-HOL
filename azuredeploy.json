@@ -104,7 +104,7 @@
             "type": "int"
         },
         "managerVMSize": {
-            "defaultValue": "Standard_DS3",
+            "defaultValue": "Standard_DS3_v2",
             "metadata": {
                 "description": "The size of the created Manager machines"
             },
@@ -132,7 +132,7 @@
             "type": "int"
         },
         "workerVMSize": {
-            "defaultValue": "Standard_DS2_v2",
+            "defaultValue": "Standard_DS3_v2",
             "metadata": {
                 "description": "The size of the created machines"
             },
