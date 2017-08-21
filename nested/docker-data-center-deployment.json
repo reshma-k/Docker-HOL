@@ -3407,6 +3407,234 @@
                             },
                             "protocol": "Tcp"
                         }
+                    },
+                    {
+                        "name": "vote-app55",
+                        "properties": {
+                            "backendAddressPool": {
+                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
+                            },
+                            "backendPort": 5500,
+                            "enableFloatingIP": false,
+                            "frontendIPConfiguration": {
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
+                            },
+                            "frontendPort": 5500,
+                            "idleTimeoutInMinutes": 5,
+                            "probe": {
+                                "id": "[concat(variables('lbID'),'/probes/default')]"
+                            },
+                            "protocol": "Tcp"
+                        }
+                    },
+                    {
+                        "name": "result-app55",
+                        "properties": {
+                            "backendAddressPool": {
+                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
+                            },
+                            "backendPort": 5501,
+                            "enableFloatingIP": false,
+                            "frontendIPConfiguration": {
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
+                            },
+                            "frontendPort": 5501,
+                            "idleTimeoutInMinutes": 5,
+                            "probe": {
+                                "id": "[concat(variables('lbID'),'/probes/default')]"
+                            },
+                            "protocol": "Tcp"
+                        }
+                    },
+                    {
+                        "name": "visualizer-app55",
+                        "properties": {
+                            "backendAddressPool": {
+                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
+                            },
+                            "backendPort": 8055,
+                            "enableFloatingIP": false,
+                            "frontendIPConfiguration": {
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
+                            },
+                            "frontendPort": 8055,
+                            "idleTimeoutInMinutes": 5,
+                            "probe": {
+                                "id": "[concat(variables('lbID'),'/probes/default')]"
+                            },
+                            "protocol": "Tcp"
+                        }
+                    },
+                    {
+                        "name": "vote-app56",
+                        "properties": {
+                            "backendAddressPool": {
+                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
+                            },
+                            "backendPort": 5600,
+                            "enableFloatingIP": false,
+                            "frontendIPConfiguration": {
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
+                            },
+                            "frontendPort": 5600,
+                            "idleTimeoutInMinutes": 5,
+                            "probe": {
+                                "id": "[concat(variables('lbID'),'/probes/default')]"
+                            },
+                            "protocol": "Tcp"
+                        }
+                    },
+                    {
+                        "name": "result-app56",
+                        "properties": {
+                            "backendAddressPool": {
+                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
+                            },
+                            "backendPort": 5601,
+                            "enableFloatingIP": false,
+                            "frontendIPConfiguration": {
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
+                            },
+                            "frontendPort": 5601,
+                            "idleTimeoutInMinutes": 5,
+                            "probe": {
+                                "id": "[concat(variables('lbID'),'/probes/default')]"
+                            },
+                            "protocol": "Tcp"
+                        }
+                    },
+                    {
+                        "name": "visualizer-app56",
+                        "properties": {
+                            "backendAddressPool": {
+                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
+                            },
+                            "backendPort": 8056,
+                            "enableFloatingIP": false,
+                            "frontendIPConfiguration": {
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
+                            },
+                            "frontendPort": 8056,
+                            "idleTimeoutInMinutes": 5,
+                            "probe": {
+                                "id": "[concat(variables('lbID'),'/probes/default')]"
+                            },
+                            "protocol": "Tcp"
+                        }
+                    },
+                    {
+                        "name": "vote-app57",
+                        "properties": {
+                            "backendAddressPool": {
+                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
+                            },
+                            "backendPort": 5700,
+                            "enableFloatingIP": false,
+                            "frontendIPConfiguration": {
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
+                            },
+                            "frontendPort": 5700,
+                            "idleTimeoutInMinutes": 5,
+                            "probe": {
+                                "id": "[concat(variables('lbID'),'/probes/default')]"
+                            },
+                            "protocol": "Tcp"
+                        }
+                    },
+                    {
+                        "name": "result-app57",
+                        "properties": {
+                            "backendAddressPool": {
+                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
+                            },
+                            "backendPort": 5701,
+                            "enableFloatingIP": false,
+                            "frontendIPConfiguration": {
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
+                            },
+                            "frontendPort": 5701,
+                            "idleTimeoutInMinutes": 5,
+                            "probe": {
+                                "id": "[concat(variables('lbID'),'/probes/default')]"
+                            },
+                            "protocol": "Tcp"
+                        }
+                    },
+                    {
+                        "name": "visualizer-app57",
+                        "properties": {
+                            "backendAddressPool": {
+                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
+                            },
+                            "backendPort": 8057,
+                            "enableFloatingIP": false,
+                            "frontendIPConfiguration": {
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
+                            },
+                            "frontendPort": 8057,
+                            "idleTimeoutInMinutes": 5,
+                            "probe": {
+                                "id": "[concat(variables('lbID'),'/probes/default')]"
+                            },
+                            "protocol": "Tcp"
+                        }
+                    },
+                    {
+                        "name": "vote-app58",
+                        "properties": {
+                            "backendAddressPool": {
+                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
+                            },
+                            "backendPort": 5800,
+                            "enableFloatingIP": false,
+                            "frontendIPConfiguration": {
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
+                            },
+                            "frontendPort": 5800,
+                            "idleTimeoutInMinutes": 5,
+                            "probe": {
+                                "id": "[concat(variables('lbID'),'/probes/default')]"
+                            },
+                            "protocol": "Tcp"
+                        }
+                    },
+                    {
+                        "name": "result-app58",
+                        "properties": {
+                            "backendAddressPool": {
+                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
+                            },
+                            "backendPort": 5801,
+                            "enableFloatingIP": false,
+                            "frontendIPConfiguration": {
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
+                            },
+                            "frontendPort": 5801,
+                            "idleTimeoutInMinutes": 5,
+                            "probe": {
+                                "id": "[concat(variables('lbID'),'/probes/default')]"
+                            },
+                            "protocol": "Tcp"
+                        }
+                    },
+                    {
+                        "name": "visualizer-app58",
+                        "properties": {
+                            "backendAddressPool": {
+                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
+                            },
+                            "backendPort": 8058,
+                            "enableFloatingIP": false,
+                            "frontendIPConfiguration": {
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
+                            },
+                            "frontendPort": 8058,
+                            "idleTimeoutInMinutes": 5,
+                            "probe": {
+                                "id": "[concat(variables('lbID'),'/probes/default')]"
+                            },
+                            "protocol": "Tcp"
+                        }
                     }
                 ],
                 "probes": [
