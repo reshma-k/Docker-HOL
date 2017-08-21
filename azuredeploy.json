@@ -90,13 +90,13 @@
                 "description": "AD ServicePrincipal App ID"
             },
             "type": "string",
-            "defaultValue": ""
+            "defaultValue": "8dd7d328-2bdb-4389-9085-5733171b54a0"
         },
         "adServicePrincipalAppSecret": {
             "metadata": {
                 "description": "AD ServicePrincipal App Secret"
             },
-            "defaultValue": "",
+            "defaultValue": "3RNqdfe8mtsD4vYQFWog6s+iqBKjy4+ELUpPOYNyJgo=",
             "type": "securestring"
         },
         "managerCount": {
@@ -132,7 +132,7 @@
             "type": "int"
         },
         "workerVMSize": {
-            "defaultValue": "Standard_D2_v2",
+            "defaultValue": "Standard_DS2_v2",
             "metadata": {
                 "description": "The size of the created machines"
             },
