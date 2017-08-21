@@ -396,7 +396,7 @@
                             "backendPort": 100,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 100,
                             "idleTimeoutInMinutes": 5,
@@ -415,7 +415,7 @@
                             "backendPort": 101,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 101,
                             "idleTimeoutInMinutes": 5,
@@ -434,7 +434,7 @@
                             "backendPort": 8001,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8001,
                             "idleTimeoutInMinutes": 5,
@@ -453,7 +453,7 @@
                             "backendPort": 200,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 200,
                             "idleTimeoutInMinutes": 5,
@@ -472,7 +472,7 @@
                             "backendPort": 201,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 201,
                             "idleTimeoutInMinutes": 5,
@@ -491,7 +491,7 @@
                             "backendPort": 8002,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8002,
                             "idleTimeoutInMinutes": 5,
@@ -510,7 +510,7 @@
                             "backendPort": 300,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 300,
                             "idleTimeoutInMinutes": 5,
@@ -529,7 +529,7 @@
                             "backendPort": 301,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 301,
                             "idleTimeoutInMinutes": 5,
@@ -548,7 +548,7 @@
                             "backendPort": 8003,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8003,
                             "idleTimeoutInMinutes": 5,
@@ -567,7 +567,7 @@
                             "backendPort": 400,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 400,
                             "idleTimeoutInMinutes": 5,
@@ -586,7 +586,7 @@
                             "backendPort": 401,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 401,
                             "idleTimeoutInMinutes": 5,
@@ -605,7 +605,7 @@
                             "backendPort": 8004,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8004,
                             "idleTimeoutInMinutes": 5,
@@ -624,7 +624,7 @@
                             "backendPort": 500,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 500,
                             "idleTimeoutInMinutes": 5,
@@ -643,7 +643,7 @@
                             "backendPort": 501,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 501,
                             "idleTimeoutInMinutes": 5,
@@ -662,7 +662,7 @@
                             "backendPort": 8005,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8005,
                             "idleTimeoutInMinutes": 5,
@@ -681,7 +681,7 @@
                             "backendPort": 600,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 600,
                             "idleTimeoutInMinutes": 5,
@@ -700,7 +700,7 @@
                             "backendPort": 601,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 601,
                             "idleTimeoutInMinutes": 5,
@@ -719,7 +719,7 @@
                             "backendPort": 8006,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8006,
                             "idleTimeoutInMinutes": 5,
@@ -738,7 +738,7 @@
                             "backendPort": 700,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 700,
                             "idleTimeoutInMinutes": 5,
@@ -757,7 +757,7 @@
                             "backendPort": 701,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 701,
                             "idleTimeoutInMinutes": 5,
@@ -776,7 +776,7 @@
                             "backendPort": 8007,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8007,
                             "idleTimeoutInMinutes": 5,
@@ -795,7 +795,7 @@
                             "backendPort": 800,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 800,
                             "idleTimeoutInMinutes": 5,
@@ -814,7 +814,7 @@
                             "backendPort": 801,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 801,
                             "idleTimeoutInMinutes": 5,
@@ -833,7 +833,7 @@
                             "backendPort": 8008,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8008,
                             "idleTimeoutInMinutes": 5,
@@ -852,7 +852,7 @@
                             "backendPort": 900,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 900,
                             "idleTimeoutInMinutes": 5,
@@ -871,7 +871,7 @@
                             "backendPort": 901,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 901,
                             "idleTimeoutInMinutes": 5,
@@ -890,7 +890,7 @@
                             "backendPort": 8009,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8009,
                             "idleTimeoutInMinutes": 5,
@@ -909,7 +909,7 @@
                             "backendPort": 1000,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1000,
                             "idleTimeoutInMinutes": 5,
@@ -928,7 +928,7 @@
                             "backendPort": 1001,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1001,
                             "idleTimeoutInMinutes": 5,
@@ -947,7 +947,7 @@
                             "backendPort": 8010,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8010,
                             "idleTimeoutInMinutes": 5,
@@ -966,7 +966,7 @@
                             "backendPort": 1000,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1000,
                             "idleTimeoutInMinutes": 5,
@@ -985,7 +985,7 @@
                             "backendPort": 1001,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1001,
                             "idleTimeoutInMinutes": 5,
@@ -1004,7 +1004,7 @@
                             "backendPort": 8010,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8010,
                             "idleTimeoutInMinutes": 5,
@@ -1023,7 +1023,7 @@
                             "backendPort": 1100,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1100,
                             "idleTimeoutInMinutes": 5,
@@ -1042,7 +1042,7 @@
                             "backendPort": 1101,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1101,
                             "idleTimeoutInMinutes": 5,
@@ -1061,7 +1061,7 @@
                             "backendPort": 8011,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8011,
                             "idleTimeoutInMinutes": 5,
@@ -1080,7 +1080,7 @@
                             "backendPort": 1200,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1200,
                             "idleTimeoutInMinutes": 5,
@@ -1099,7 +1099,7 @@
                             "backendPort": 1201,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1201,
                             "idleTimeoutInMinutes": 5,
@@ -1118,7 +1118,7 @@
                             "backendPort": 8012,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8012,
                             "idleTimeoutInMinutes": 5,
@@ -1137,7 +1137,7 @@
                             "backendPort": 1300,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1300,
                             "idleTimeoutInMinutes": 5,
@@ -1156,7 +1156,7 @@
                             "backendPort": 1301,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1301,
                             "idleTimeoutInMinutes": 5,
@@ -1175,7 +1175,7 @@
                             "backendPort": 8013,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8013,
                             "idleTimeoutInMinutes": 5,
@@ -1194,7 +1194,7 @@
                             "backendPort": 1400,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1400,
                             "idleTimeoutInMinutes": 5,
@@ -1213,7 +1213,7 @@
                             "backendPort": 1401,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1401,
                             "idleTimeoutInMinutes": 5,
@@ -1232,7 +1232,7 @@
                             "backendPort": 8014,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8014,
                             "idleTimeoutInMinutes": 5,
@@ -1251,7 +1251,7 @@
                             "backendPort": 1500,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1500,
                             "idleTimeoutInMinutes": 5,
@@ -1270,7 +1270,7 @@
                             "backendPort": 1501,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1501,
                             "idleTimeoutInMinutes": 5,
@@ -1289,7 +1289,7 @@
                             "backendPort": 8015,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8015,
                             "idleTimeoutInMinutes": 5,
@@ -1308,7 +1308,7 @@
                             "backendPort": 1600,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1600,
                             "idleTimeoutInMinutes": 5,
@@ -1327,7 +1327,7 @@
                             "backendPort": 1601,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1601,
                             "idleTimeoutInMinutes": 5,
@@ -1346,7 +1346,7 @@
                             "backendPort": 8016,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8016,
                             "idleTimeoutInMinutes": 5,
@@ -1365,7 +1365,7 @@
                             "backendPort": 1700,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1700,
                             "idleTimeoutInMinutes": 5,
@@ -1384,7 +1384,7 @@
                             "backendPort": 1701,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1701,
                             "idleTimeoutInMinutes": 5,
@@ -1403,7 +1403,7 @@
                             "backendPort": 8017,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8017,
                             "idleTimeoutInMinutes": 5,
@@ -1422,7 +1422,7 @@
                             "backendPort": 1800,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1800,
                             "idleTimeoutInMinutes": 5,
@@ -1441,7 +1441,7 @@
                             "backendPort": 1801,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1801,
                             "idleTimeoutInMinutes": 5,
@@ -1460,7 +1460,7 @@
                             "backendPort": 8018,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8018,
                             "idleTimeoutInMinutes": 5,
@@ -1479,7 +1479,7 @@
                             "backendPort": 1900,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1900,
                             "idleTimeoutInMinutes": 5,
@@ -1498,7 +1498,7 @@
                             "backendPort": 1901,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 1901,
                             "idleTimeoutInMinutes": 5,
@@ -1517,7 +1517,7 @@
                             "backendPort": 8019,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8019,
                             "idleTimeoutInMinutes": 5,
@@ -1536,7 +1536,7 @@
                             "backendPort": 2000,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2000,
                             "idleTimeoutInMinutes": 5,
@@ -1555,7 +1555,7 @@
                             "backendPort": 2001,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2001,
                             "idleTimeoutInMinutes": 5,
@@ -1574,7 +1574,7 @@
                             "backendPort": 8020,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8020,
                             "idleTimeoutInMinutes": 5,
@@ -1593,7 +1593,7 @@
                             "backendPort": 2100,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2100,
                             "idleTimeoutInMinutes": 5,
@@ -1612,7 +1612,7 @@
                             "backendPort": 2101,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2101,
                             "idleTimeoutInMinutes": 5,
@@ -1631,7 +1631,7 @@
                             "backendPort": 8021,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8021,
                             "idleTimeoutInMinutes": 5,
@@ -1650,7 +1650,7 @@
                             "backendPort": 2200,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2200,
                             "idleTimeoutInMinutes": 5,
@@ -1669,7 +1669,7 @@
                             "backendPort": 2201,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2201,
                             "idleTimeoutInMinutes": 5,
@@ -1688,7 +1688,7 @@
                             "backendPort": 8022,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8022,
                             "idleTimeoutInMinutes": 5,
@@ -1707,7 +1707,7 @@
                             "backendPort": 2300,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2300,
                             "idleTimeoutInMinutes": 5,
@@ -1726,7 +1726,7 @@
                             "backendPort": 2301,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2301,
                             "idleTimeoutInMinutes": 5,
@@ -1745,7 +1745,7 @@
                             "backendPort": 8023,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8023,
                             "idleTimeoutInMinutes": 5,
@@ -1764,7 +1764,7 @@
                             "backendPort": 2400,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2400,
                             "idleTimeoutInMinutes": 5,
@@ -1783,7 +1783,7 @@
                             "backendPort": 2401,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2401,
                             "idleTimeoutInMinutes": 5,
@@ -1802,7 +1802,7 @@
                             "backendPort": 8024,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8024,
                             "idleTimeoutInMinutes": 5,
@@ -1821,7 +1821,7 @@
                             "backendPort": 2500,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2500,
                             "idleTimeoutInMinutes": 5,
@@ -1840,7 +1840,7 @@
                             "backendPort": 2501,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2501,
                             "idleTimeoutInMinutes": 5,
@@ -1859,7 +1859,7 @@
                             "backendPort": 8025,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8025,
                             "idleTimeoutInMinutes": 5,
@@ -1878,7 +1878,7 @@
                             "backendPort": 2600,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2600,
                             "idleTimeoutInMinutes": 5,
@@ -1897,7 +1897,7 @@
                             "backendPort": 2601,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2601,
                             "idleTimeoutInMinutes": 5,
@@ -1916,7 +1916,7 @@
                             "backendPort": 8026,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8026,
                             "idleTimeoutInMinutes": 5,
@@ -1935,7 +1935,7 @@
                             "backendPort": 2700,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2700,
                             "idleTimeoutInMinutes": 5,
@@ -1954,7 +1954,7 @@
                             "backendPort": 2701,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2701,
                             "idleTimeoutInMinutes": 5,
@@ -1973,7 +1973,7 @@
                             "backendPort": 8027,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8027,
                             "idleTimeoutInMinutes": 5,
@@ -1992,7 +1992,7 @@
                             "backendPort": 2800,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2800,
                             "idleTimeoutInMinutes": 5,
@@ -2011,7 +2011,7 @@
                             "backendPort": 2801,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2801,
                             "idleTimeoutInMinutes": 5,
@@ -2030,7 +2030,7 @@
                             "backendPort": 8028,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8028,
                             "idleTimeoutInMinutes": 5,
@@ -2049,7 +2049,7 @@
                             "backendPort": 2900,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2900,
                             "idleTimeoutInMinutes": 5,
@@ -2068,7 +2068,7 @@
                             "backendPort": 2901,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 2901,
                             "idleTimeoutInMinutes": 5,
@@ -2087,7 +2087,7 @@
                             "backendPort": 8029,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8029,
                             "idleTimeoutInMinutes": 5,
@@ -2106,7 +2106,7 @@
                             "backendPort": 3000,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3000,
                             "idleTimeoutInMinutes": 5,
@@ -2125,7 +2125,7 @@
                             "backendPort": 3001,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3001,
                             "idleTimeoutInMinutes": 5,
@@ -2144,7 +2144,7 @@
                             "backendPort": 8030,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8030,
                             "idleTimeoutInMinutes": 5,
@@ -2163,7 +2163,7 @@
                             "backendPort": 3100,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3100,
                             "idleTimeoutInMinutes": 5,
@@ -2182,7 +2182,7 @@
                             "backendPort": 3101,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3101,
                             "idleTimeoutInMinutes": 5,
@@ -2201,7 +2201,7 @@
                             "backendPort": 8031,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8031,
                             "idleTimeoutInMinutes": 5,
@@ -2220,7 +2220,7 @@
                             "backendPort": 3200,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3200,
                             "idleTimeoutInMinutes": 5,
@@ -2239,7 +2239,7 @@
                             "backendPort": 3201,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3201,
                             "idleTimeoutInMinutes": 5,
@@ -2258,7 +2258,7 @@
                             "backendPort": 8032,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8032,
                             "idleTimeoutInMinutes": 5,
@@ -2277,7 +2277,7 @@
                             "backendPort": 3300,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3300,
                             "idleTimeoutInMinutes": 5,
@@ -2296,7 +2296,7 @@
                             "backendPort": 3301,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3301,
                             "idleTimeoutInMinutes": 5,
@@ -2315,7 +2315,7 @@
                             "backendPort": 8033,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8033,
                             "idleTimeoutInMinutes": 5,
@@ -2334,7 +2334,7 @@
                             "backendPort": 3400,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3400,
                             "idleTimeoutInMinutes": 5,
@@ -2353,7 +2353,7 @@
                             "backendPort": 3401,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3401,
                             "idleTimeoutInMinutes": 5,
@@ -2372,7 +2372,7 @@
                             "backendPort": 8034,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8034,
                             "idleTimeoutInMinutes": 5,
@@ -2391,7 +2391,7 @@
                             "backendPort": 3500,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3500,
                             "idleTimeoutInMinutes": 5,
@@ -2410,7 +2410,7 @@
                             "backendPort": 3501,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3501,
                             "idleTimeoutInMinutes": 5,
@@ -2429,7 +2429,7 @@
                             "backendPort": 8035,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8035,
                             "idleTimeoutInMinutes": 5,
@@ -2448,7 +2448,7 @@
                             "backendPort": 3600,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3600,
                             "idleTimeoutInMinutes": 5,
@@ -2467,7 +2467,7 @@
                             "backendPort": 3601,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3601,
                             "idleTimeoutInMinutes": 5,
@@ -2486,7 +2486,7 @@
                             "backendPort": 8036,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8036,
                             "idleTimeoutInMinutes": 5,
@@ -2505,7 +2505,7 @@
                             "backendPort": 3700,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3700,
                             "idleTimeoutInMinutes": 5,
@@ -2524,7 +2524,7 @@
                             "backendPort": 3701,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3701,
                             "idleTimeoutInMinutes": 5,
@@ -2543,7 +2543,7 @@
                             "backendPort": 8037,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8037,
                             "idleTimeoutInMinutes": 5,
@@ -2562,7 +2562,7 @@
                             "backendPort": 3800,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3800,
                             "idleTimeoutInMinutes": 5,
@@ -2581,7 +2581,7 @@
                             "backendPort": 3801,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3801,
                             "idleTimeoutInMinutes": 5,
@@ -2600,7 +2600,7 @@
                             "backendPort": 8038,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8038,
                             "idleTimeoutInMinutes": 5,
@@ -2619,7 +2619,7 @@
                             "backendPort": 3900,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3900,
                             "idleTimeoutInMinutes": 5,
@@ -2638,7 +2638,7 @@
                             "backendPort": 3901,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 3901,
                             "idleTimeoutInMinutes": 5,
@@ -2657,7 +2657,7 @@
                             "backendPort": 8039,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8039,
                             "idleTimeoutInMinutes": 5,
@@ -2676,7 +2676,7 @@
                             "backendPort": 4000,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4000,
                             "idleTimeoutInMinutes": 5,
@@ -2695,7 +2695,7 @@
                             "backendPort": 4001,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4001,
                             "idleTimeoutInMinutes": 5,
@@ -2714,7 +2714,7 @@
                             "backendPort": 8040,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8040,
                             "idleTimeoutInMinutes": 5,
@@ -2733,7 +2733,7 @@
                             "backendPort": 4100,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4100,
                             "idleTimeoutInMinutes": 5,
@@ -2752,7 +2752,7 @@
                             "backendPort": 4101,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4101,
                             "idleTimeoutInMinutes": 5,
@@ -2771,7 +2771,7 @@
                             "backendPort": 8041,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8041,
                             "idleTimeoutInMinutes": 5,
@@ -2790,7 +2790,7 @@
                             "backendPort": 4200,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4200,
                             "idleTimeoutInMinutes": 5,
@@ -2809,7 +2809,7 @@
                             "backendPort": 4201,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4201,
                             "idleTimeoutInMinutes": 5,
@@ -2828,7 +2828,7 @@
                             "backendPort": 8042,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8042,
                             "idleTimeoutInMinutes": 5,
@@ -2847,7 +2847,7 @@
                             "backendPort": 4300,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4300,
                             "idleTimeoutInMinutes": 5,
@@ -2866,7 +2866,7 @@
                             "backendPort": 4301,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4301,
                             "idleTimeoutInMinutes": 5,
@@ -2885,7 +2885,7 @@
                             "backendPort": 8043,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8043,
                             "idleTimeoutInMinutes": 5,
@@ -2904,7 +2904,7 @@
                             "backendPort": 4400,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4400,
                             "idleTimeoutInMinutes": 5,
@@ -2923,7 +2923,7 @@
                             "backendPort": 4401,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4401,
                             "idleTimeoutInMinutes": 5,
@@ -2942,7 +2942,7 @@
                             "backendPort": 8044,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8044,
                             "idleTimeoutInMinutes": 5,
@@ -2961,7 +2961,7 @@
                             "backendPort": 4500,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4500,
                             "idleTimeoutInMinutes": 5,
@@ -2980,7 +2980,7 @@
                             "backendPort": 4501,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4501,
                             "idleTimeoutInMinutes": 5,
@@ -2999,7 +2999,7 @@
                             "backendPort": 8045,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8045,
                             "idleTimeoutInMinutes": 5,
@@ -3018,7 +3018,7 @@
                             "backendPort": 4600,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4600,
                             "idleTimeoutInMinutes": 5,
@@ -3037,7 +3037,7 @@
                             "backendPort": 4601,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4601,
                             "idleTimeoutInMinutes": 5,
@@ -3056,7 +3056,7 @@
                             "backendPort": 8046,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8046,
                             "idleTimeoutInMinutes": 5,
@@ -3075,7 +3075,7 @@
                             "backendPort": 4700,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4700,
                             "idleTimeoutInMinutes": 5,
@@ -3094,7 +3094,7 @@
                             "backendPort": 4701,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4701,
                             "idleTimeoutInMinutes": 5,
@@ -3113,7 +3113,7 @@
                             "backendPort": 8047,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8047,
                             "idleTimeoutInMinutes": 5,
@@ -3132,7 +3132,7 @@
                             "backendPort": 4800,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4800,
                             "idleTimeoutInMinutes": 5,
@@ -3151,7 +3151,7 @@
                             "backendPort": 4801,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4801,
                             "idleTimeoutInMinutes": 5,
@@ -3170,7 +3170,7 @@
                             "backendPort": 8048,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8048,
                             "idleTimeoutInMinutes": 5,
@@ -3189,7 +3189,7 @@
                             "backendPort": 4900,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4900,
                             "idleTimeoutInMinutes": 5,
@@ -3208,7 +3208,7 @@
                             "backendPort": 4901,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 4901,
                             "idleTimeoutInMinutes": 5,
@@ -3227,7 +3227,7 @@
                             "backendPort": 8049,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8049,
                             "idleTimeoutInMinutes": 5,
@@ -3246,7 +3246,7 @@
                             "backendPort": 5000,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 5000,
                             "idleTimeoutInMinutes": 5,
@@ -3265,7 +3265,7 @@
                             "backendPort": 5001,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 5001,
                             "idleTimeoutInMinutes": 5,
@@ -3284,7 +3284,7 @@
                             "backendPort": 8050,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8050,
                             "idleTimeoutInMinutes": 5,
@@ -3303,7 +3303,7 @@
                             "backendPort": 5200,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 5200,
                             "idleTimeoutInMinutes": 5,
@@ -3322,7 +3322,7 @@
                             "backendPort": 5201,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 5201,
                             "idleTimeoutInMinutes": 5,
@@ -3341,7 +3341,7 @@
                             "backendPort": 8052,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8052,
                             "idleTimeoutInMinutes": 5,
@@ -3360,7 +3360,7 @@
                             "backendPort": 5300,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 5300,
                             "idleTimeoutInMinutes": 5,
@@ -3379,7 +3379,7 @@
                             "backendPort": 5301,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 5301,
                             "idleTimeoutInMinutes": 5,
@@ -3398,7 +3398,7 @@
                             "backendPort": 8053,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8053,
                             "idleTimeoutInMinutes": 5,
@@ -3417,7 +3417,7 @@
                             "backendPort": 5400,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 5400,
                             "idleTimeoutInMinutes": 5,
@@ -3436,7 +3436,7 @@
                             "backendPort": 5401,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 5401,
                             "idleTimeoutInMinutes": 5,
@@ -3455,7 +3455,7 @@
                             "backendPort": 8054,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
-                                "id": "[variables('lbPublicIPAddressName')]"
+                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 8054,
                             "idleTimeoutInMinutes": 5,
