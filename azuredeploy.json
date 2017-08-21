@@ -61,7 +61,7 @@
                 "description": "Base URL for Artifacts",
                 "artifactsBaseUrl": ""
             },
-            "defaultValue": "https://raw.githubusercontent.com/sysgain/Docker-HOL/docker-150"
+            "defaultValue": "https://raw.githubusercontent.com/sysgain/Docker-HOL/docker-50"
         },
         "ddcLicenseKey": {
             "metadata": {
