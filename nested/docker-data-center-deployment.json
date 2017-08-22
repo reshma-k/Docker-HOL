@@ -9132,6 +9132,18 @@
             "type": "Microsoft.Storage/storageAccounts"
         },
         {
+            "apiVersion": "[parameters('storageApiVersion')]",
+            "location": "[variables('storageLocation')]",
+            "name": "[variables('swarmInfoStorageAccount')]",
+            "properties": {
+                "accountType": "[parameters('storageAccountType')]"
+            },
+            "tags": {
+                "provider": "[toUpper(variables('DockerProviderTag'))]"
+            },
+            "type": "Microsoft.Storage/storageAccounts"
+        },
+        {
             "type": "Microsoft.Network/publicIPAddresses",
             "apiVersion": "[variables('apiVersion')]",
             "location": "[variables('storageLocation')]",
