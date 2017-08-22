@@ -43,7 +43,7 @@
         },
         "jenkinsAdminPassword": {
             "type": "securestring",
-             "defaultValue": "Password@1234",
+            "defaultValue": "Password@1234",
             "metadata": {
                 "description": "Password for the 'admin' user on jenkins initial security setup."
             }
@@ -90,13 +90,13 @@
                 "description": "AD ServicePrincipal App ID"
             },
             "type": "string",
-            "defaultValue": "8dd7d328-2bdb-4389-9085-5733171b54a0"
+            "defaultValue": "c2f03944-b80f-420d-9c90-37f4f5ed94590"
         },
         "adServicePrincipalAppSecret": {
             "metadata": {
                 "description": "AD ServicePrincipal App Secret"
             },
-            "defaultValue": "3RNqdfe8mtsD4vYQFWog6s+iqBKjy4+ELUpPOYNyJgo=",
+            "defaultValue": "k7KsOwAFfwmx1LQfZLdD1EalooFFlw/UFlZlIyMCYyo=",
             "type": "securestring"
         },
         "managerCount": {
@@ -104,7 +104,7 @@
             "type": "int"
         },
         "managerVMSize": {
-            "defaultValue": "Standard_DS3",
+            "defaultValue": "Standard_DS4_v2",
             "metadata": {
                 "description": "The size of the created Manager machines"
             },
@@ -114,7 +114,7 @@
             "metadata": {
                 "description": "The SSH public key used to authenticate with the created swarm. Usually available in $HOME/.ssh/id_rsa.pub file"
             },
-            "defaultValue": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCb8UFXuRg60oBBYkPO45cTlfLxbf32t9OlZ9L5EQaSqaFoSvDTyDJzuMuKe8XDGqu/I5fBm+5YWsX7efKI4BHQk7WQbDjdzueobooGHDl9nPFhhsLrtZBWIJ4t5SQfoTMI3HGnhVpUseyfOF9bqbFQGGZk\r\nA+zNPzM2bJOr1pU01A4cer+aD7qrrSfzd3hUp6px7Fy02ui7FxX2oq8SUrCvKAavvOv/XeLsn1d/MIJRqxOENZURwq3yCsWivUJ68OPNS0uGFd0fH0DgTUXTLuLYr5ilSry88J3RFoKSW1trMoGU6y/H31hPFnAt7rjzMRdtdL4rV2+efPsDx07WhoUD sri\r\nkala@cc-dcf9-a15245f3-4016727739-xgtkm",
+            "defaultValue": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAudbBgayW42miMHVp9IUHGOjWXhM6QIwCqtxM/XY8Nes67WAePXB5GbxzL327hX2kTXiaNJpG0l3Nt6V3es9rM/COTxMe6d450+1CFhGDGhUNL1gAeceAZwMcsKyqhbgqgFES3YZjdJaSki+enWNHnAyRDdkyKp8q3C3wab4E9iizYl96fGN7/s08iW1e4bw3HFDp2YL4rnlU+u9/OkaToRRKrfhsAU6za/DgBimYXSmuNlN4kxpQikOIN4wV5x3oflP4hKwHc0P+8On7VoO/8qtAsrtNbQfgh2jVM9V5qtXEDP3W/lOtep5wUgjoHawNwSIS9XF763lVdEpouCbrLw== rsa-key-20170817",
             "type": "string"
         },
         "swarmName": {
@@ -132,7 +132,7 @@
             "type": "int"
         },
         "workerVMSize": {
-            "defaultValue": "Standard_DS2_v2",
+            "defaultValue": "Standard_DS4_v2",
             "metadata": {
                 "description": "The size of the created machines"
             },
@@ -158,7 +158,7 @@
         "vnetDeploymentURI": "[concat(parameters('baseUrl'),'/nested/newvnet.json')]",
         "cloubeesDeploymnetURI": "[concat(parameters('baseUrl'),'/nested/cloudbees-jenkins-deployment.json')]",
         "dockerDataCenterDeploymentURI": "[concat(parameters('baseUrl'),'/nested/docker-data-center-deployment.json')]",
-        "scriptUrl":"[concat(parameters('baseUrl'),'/scripts')]",
+        "scriptUrl": "[concat(parameters('baseUrl'),'/scripts')]",
         "vnetID": "[resourceId('Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
         "cloudbeesLocation": "[parameters('location')]",
         "jenkinsPublicIPName": "jenkinsPublicIP",
@@ -271,7 +271,7 @@
                     "workerVMSize": {
                         "value": "[parameters('workerVMSize')]"
                     },
-                    "vnetID":{
+                    "vnetID": {
                         "value": "[variables('vnetID')]"
                     },
                     "dockerSubnetName": {
@@ -286,7 +286,7 @@
                     "storageAccountType": {
                         "value": "[variables('storageAccountType1')]"
                     },
-                    "location":{
+                    "location": {
                         "value": "[parameters('location')]"
                     }
                 }
@@ -351,11 +351,11 @@
                     "subnetName": {
                         "value": "[variables('jenkinsSubnetName')]"
                     },
-                    "virtualNetworkName":{
+                    "virtualNetworkName": {
                         "value": "[variables('virtualNetworkName')]"
                     },
-                    "scriptUrl":{
-                        "value":"[variables('scriptUrl')]"
+                    "scriptUrl": {
+                        "value": "[variables('scriptUrl')]"
                     },
                     "dockerTags": {
                         "value": "[variables('dockerTags')]"
@@ -371,7 +371,7 @@
         }
     ],
     "outputs": {
-        "JenkinsFqdn&Url":{
+        "JenkinsFqdn&Url": {
             "type": "string",
             "value": "[reference('cloudbeesDeployment').outputs.jenkinsfqdn.value]"
         },
