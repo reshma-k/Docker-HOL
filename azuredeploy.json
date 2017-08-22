@@ -125,7 +125,7 @@
             "type": "string"
         },
         "workerCount": {
-            "defaultValue": 5,
+            "defaultValue": 4,
             "metadata": {
                 "description": "Number of Worker nodes"
             },
