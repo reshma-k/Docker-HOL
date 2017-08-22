@@ -4839,12 +4839,12 @@
                             "backendAddressPool": {
                                 "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
                             },
-                            "backendPort": 8000,
+                            "backendPort": 20000,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
                                 "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
-                            "frontendPort": 8000,
+                            "frontendPort": 20000,
                             "idleTimeoutInMinutes": 5,
                             "probe": {
                                 "id": "[concat(variables('lbID'),'/probes/default')]"
@@ -4858,12 +4858,12 @@
                             "backendAddressPool": {
                                 "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
                             },
-                            "backendPort": 8001,
+                            "backendPort": 20001,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
                                 "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
-                            "frontendPort": 8001,
+                            "frontendPort": 20001,
                             "idleTimeoutInMinutes": 5,
                             "probe": {
                                 "id": "[concat(variables('lbID'),'/probes/default')]"
@@ -4877,12 +4877,12 @@
                             "backendAddressPool": {
                                 "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
                             },
-                            "backendPort": 8080,
+                            "backendPort": 20003,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
                                 "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
-                            "frontendPort": 8080,
+                            "frontendPort": 20003,
                             "idleTimeoutInMinutes": 5,
                             "probe": {
                                 "id": "[concat(variables('lbID'),'/probes/default')]"
@@ -4896,12 +4896,12 @@
                             "backendAddressPool": {
                                 "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
                             },
-                            "backendPort": 8100,
+                            "backendPort": 30000,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
                                 "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
-                            "frontendPort": 8100,
+                            "frontendPort": 30000,
                             "idleTimeoutInMinutes": 5,
                             "probe": {
                                 "id": "[concat(variables('lbID'),'/probes/default')]"
@@ -4915,12 +4915,12 @@
                             "backendAddressPool": {
                                 "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
                             },
-                            "backendPort": 8101,
+                            "backendPort": 30001,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
                                 "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
-                            "frontendPort": 8101,
+                            "frontendPort": 30001,
                             "idleTimeoutInMinutes": 5,
                             "probe": {
                                 "id": "[concat(variables('lbID'),'/probes/default')]"
@@ -4934,12 +4934,12 @@
                             "backendAddressPool": {
                                 "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
                             },
-                            "backendPort": 8081,
+                            "backendPort": 30002,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
                                 "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
-                            "frontendPort": 8081,
+                            "frontendPort": 30002,
                             "idleTimeoutInMinutes": 5,
                             "probe": {
                                 "id": "[concat(variables('lbID'),'/probes/default')]"
@@ -5081,7 +5081,7 @@
                         }
                     },
                     {
-                        "name": "result-app82",
+                        "name": "result-app84",
                         "properties": {
                             "backendAddressPool": {
                                 "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
