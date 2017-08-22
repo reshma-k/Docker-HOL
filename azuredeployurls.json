@@ -1,22 +1,21 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
-  "contentVersion": "1.0.0.0",
-  "parameters": { },
-  "variables": { },
-  "resources": [ ],
-  "outputs": {
-    "Jenkins FQDN Url": {
-      "type": "string",
-      "value": "jenkins-0-ocdns7jpzgpbozyt62.westus.cloudapp.azure.com"
-    },
-    "DTRLoginURL": {
-      "type": "string",
-      "value": "https://dtrlb-vpvk3n5huflf4.westus.cloudapp.azure.com"
-    },
-    "UCPLoginURL": {
-      "type": "string",
-      "value": "https://ucplb-vpvk3n5huflf4.westus.cloudapp.azure.com"
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {},
+    "variables": {},
+    "resources": [],
+    "outputs": {
+        "Jenkins FQDN Url": {
+            "type": "string",
+            "value": "http://jenkins-0-ocdns7jpzgpbozyt62.westus.cloudapp.azure.com"
+        },
+        "DTRLoginURL": {
+            "type": "string",
+            "value": "https://dtrlb-vpvk3n5huflf4.westus.cloudapp.azure.com"
+        },
+        "UCPLoginURL": {
+            "type": "string",
+            "value": "https://ucplb-vpvk3n5huflf4.westus.cloudapp.azure.com"
+        }
     }
-  }
 }
-
