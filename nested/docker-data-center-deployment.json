@@ -6525,7 +6525,7 @@
                         }
                     },
                     {
-                        "name": "visualizer-app100",
+                        "name": "visualizer-app110",
                         "properties": {
                             "backendAddressPool": {
                                 "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
