@@ -61,7 +61,7 @@
                 "description": "Base URL for Artifacts",
                 "artifactsBaseUrl": ""
             },
-            "defaultValue": "https://raw.githubusercontent.com/sysgain/Docker-HOL/docker-150"
+            "defaultValue": "https://raw.githubusercontent.com/sysgain/Docker-HOL/docker-100"
         },
         "ddcLicenseKey": {
             "metadata": {
@@ -104,7 +104,7 @@
             "type": "int"
         },
         "managerVMSize": {
-            "defaultValue": "Standard_DS3_v2",
+            "defaultValue": "Standard_DS13_v2",
             "metadata": {
                 "description": "The size of the created Manager machines"
             },
@@ -132,7 +132,7 @@
             "type": "int"
         },
         "workerVMSize": {
-            "defaultValue": "Standard_D2_v2",
+            "defaultValue": "Standard_D10_v2",
             "metadata": {
                 "description": "The size of the created machines"
             },
