@@ -100,11 +100,11 @@
             "type": "securestring"
         },
         "managerCount": {
-            "defaultValue": 3,
+            "defaultValue": 2,
             "type": "int"
         },
         "managerVMSize": {
-            "defaultValue": "Standard_DS13_v2",
+            "defaultValue": "Standard_DS3_v2",
             "metadata": {
                 "description": "The size of the created Manager machines"
             },
@@ -132,7 +132,7 @@
             "type": "int"
         },
         "workerVMSize": {
-            "defaultValue": "Standard_D12_v2",
+            "defaultValue": "Standard_D2_v2",
             "metadata": {
                 "description": "The size of the created machines"
             },
