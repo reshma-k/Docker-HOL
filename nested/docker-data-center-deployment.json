@@ -4098,7 +4098,7 @@
                             "backendAddressPool": {
                                 "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
                             },
-                            "backendPort": 6600,
+                            "backendPort": 6700,
                             "enableFloatingIP": false,
                             "frontendIPConfiguration": {
                                 "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
