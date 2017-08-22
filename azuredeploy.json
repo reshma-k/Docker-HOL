@@ -132,7 +132,7 @@
             "type": "int"
         },
         "workerVMSize": {
-            "defaultValue": "Standard_DS13_v2",
+            "defaultValue": "Standard_DS12_v2",
             "metadata": {
                 "description": "The size of the created machines"
             },

@@ -137,7 +137,7 @@
             "location": "[variables('storageLocation')]",
             "name": "[concat(variables('uniqueStringArray')[copyIndex()], variables('storageAccountSuffix'))]",
             "properties": {
-                "accountType": "Standard_LRS"
+                "accountType": "[parameters('storageAccountType')]"
             },
             "copy": {
                 "count": "[length(variables('uniqueStringArray'))]",
