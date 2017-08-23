@@ -84,7 +84,7 @@
             "metadata": {
                 "description": "VM Size"
             },
-            "defaultValue": "Standard_A2"
+            "defaultValue": "Standard_D12_v2"
         },
         "size": {
             "type": "string",
