@@ -67,7 +67,7 @@
             "metadata": {
                 "description": "Upload your Docker Datacenter License Key"
             },
-            "type": "SecureString"
+            "type": "securestring"
         },
         "ddcPassword": {
             "maxLength": 40,
@@ -76,14 +76,14 @@
             },
             "defaultValue": "Password@1234",
             "minLength": 8,
-            "type": "SecureString"
+            "type": "securestring"
         },
         "ddcUsername": {
             "defaultValue": "ddcadmin",
             "metadata": {
                 "description": "Please enter the username you want to use for Docker Datacenter."
             },
-            "type": "String"
+            "type": "string"
         },
         "adServicePrincipalAppID": {
             "metadata": {

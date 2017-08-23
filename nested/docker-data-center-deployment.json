@@ -7209,25 +7209,6 @@
                         }
                     },
                     {
-                        "name": "visualizer-app120",
-                        "properties": {
-                            "backendAddressPool": {
-                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
-                            },
-                            "backendPort": 8120,
-                            "enableFloatingIP": false,
-                            "frontendIPConfiguration": {
-                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
-                            },
-                            "frontendPort": 8120,
-                            "idleTimeoutInMinutes": 5,
-                            "probe": {
-                                "id": "[concat(variables('lbID'),'/probes/default')]"
-                            },
-                            "protocol": "Tcp"
-                        }
-                    },
-                    {
                         "name": "vote-app121",
                         "properties": {
                             "backendAddressPool": {
@@ -7258,25 +7239,6 @@
                                 "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 12101,
-                            "idleTimeoutInMinutes": 5,
-                            "probe": {
-                                "id": "[concat(variables('lbID'),'/probes/default')]"
-                            },
-                            "protocol": "Tcp"
-                        }
-                    },
-                    {
-                        "name": "visualizer-app121",
-                        "properties": {
-                            "backendAddressPool": {
-                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
-                            },
-                            "backendPort": 8121,
-                            "enableFloatingIP": false,
-                            "frontendIPConfiguration": {
-                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
-                            },
-                            "frontendPort": 8121,
                             "idleTimeoutInMinutes": 5,
                             "probe": {
                                 "id": "[concat(variables('lbID'),'/probes/default')]"
@@ -7323,25 +7285,6 @@
                         }
                     },
                     {
-                        "name": "visualizer-app122",
-                        "properties": {
-                            "backendAddressPool": {
-                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
-                            },
-                            "backendPort": 8122,
-                            "enableFloatingIP": false,
-                            "frontendIPConfiguration": {
-                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
-                            },
-                            "frontendPort": 8122,
-                            "idleTimeoutInMinutes": 5,
-                            "probe": {
-                                "id": "[concat(variables('lbID'),'/probes/default')]"
-                            },
-                            "protocol": "Tcp"
-                        }
-                    },
-                    {
                         "name": "vote-app123",
                         "properties": {
                             "backendAddressPool": {
@@ -7372,25 +7315,6 @@
                                 "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 12301,
-                            "idleTimeoutInMinutes": 5,
-                            "probe": {
-                                "id": "[concat(variables('lbID'),'/probes/default')]"
-                            },
-                            "protocol": "Tcp"
-                        }
-                    },
-                    {
-                        "name": "visualizer-app123",
-                        "properties": {
-                            "backendAddressPool": {
-                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
-                            },
-                            "backendPort": 8123,
-                            "enableFloatingIP": false,
-                            "frontendIPConfiguration": {
-                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
-                            },
-                            "frontendPort": 8123,
                             "idleTimeoutInMinutes": 5,
                             "probe": {
                                 "id": "[concat(variables('lbID'),'/probes/default')]"
@@ -7437,25 +7361,6 @@
                         }
                     },
                     {
-                        "name": "visualizer-app124",
-                        "properties": {
-                            "backendAddressPool": {
-                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
-                            },
-                            "backendPort": 8124,
-                            "enableFloatingIP": false,
-                            "frontendIPConfiguration": {
-                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
-                            },
-                            "frontendPort": 8124,
-                            "idleTimeoutInMinutes": 5,
-                            "probe": {
-                                "id": "[concat(variables('lbID'),'/probes/default')]"
-                            },
-                            "protocol": "Tcp"
-                        }
-                    },
-                    {
                         "name": "vote-app125",
                         "properties": {
                             "backendAddressPool": {
@@ -7486,25 +7391,6 @@
                                 "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 12501,
-                            "idleTimeoutInMinutes": 5,
-                            "probe": {
-                                "id": "[concat(variables('lbID'),'/probes/default')]"
-                            },
-                            "protocol": "Tcp"
-                        }
-                    },
-                    {
-                        "name": "visualizer-app125",
-                        "properties": {
-                            "backendAddressPool": {
-                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
-                            },
-                            "backendPort": 8125,
-                            "enableFloatingIP": false,
-                            "frontendIPConfiguration": {
-                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
-                            },
-                            "frontendPort": 8125,
                             "idleTimeoutInMinutes": 5,
                             "probe": {
                                 "id": "[concat(variables('lbID'),'/probes/default')]"
@@ -7551,25 +7437,6 @@
                         }
                     },
                     {
-                        "name": "visualizer-app126",
-                        "properties": {
-                            "backendAddressPool": {
-                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
-                            },
-                            "backendPort": 8126,
-                            "enableFloatingIP": false,
-                            "frontendIPConfiguration": {
-                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
-                            },
-                            "frontendPort": 8126,
-                            "idleTimeoutInMinutes": 5,
-                            "probe": {
-                                "id": "[concat(variables('lbID'),'/probes/default')]"
-                            },
-                            "protocol": "Tcp"
-                        }
-                    },
-                    {
                         "name": "vote-app127",
                         "properties": {
                             "backendAddressPool": {
@@ -7600,25 +7467,6 @@
                                 "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 12701,
-                            "idleTimeoutInMinutes": 5,
-                            "probe": {
-                                "id": "[concat(variables('lbID'),'/probes/default')]"
-                            },
-                            "protocol": "Tcp"
-                        }
-                    },
-                    {
-                        "name": "visualizer-app127",
-                        "properties": {
-                            "backendAddressPool": {
-                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
-                            },
-                            "backendPort": 8127,
-                            "enableFloatingIP": false,
-                            "frontendIPConfiguration": {
-                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
-                            },
-                            "frontendPort": 8127,
                             "idleTimeoutInMinutes": 5,
                             "probe": {
                                 "id": "[concat(variables('lbID'),'/probes/default')]"
@@ -7665,25 +7513,6 @@
                         }
                     },
                     {
-                        "name": "visualizer-app128",
-                        "properties": {
-                            "backendAddressPool": {
-                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
-                            },
-                            "backendPort": 8128,
-                            "enableFloatingIP": false,
-                            "frontendIPConfiguration": {
-                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
-                            },
-                            "frontendPort": 8128,
-                            "idleTimeoutInMinutes": 5,
-                            "probe": {
-                                "id": "[concat(variables('lbID'),'/probes/default')]"
-                            },
-                            "protocol": "Tcp"
-                        }
-                    },
-                    {
                         "name": "vote-app129",
                         "properties": {
                             "backendAddressPool": {
@@ -7714,25 +7543,6 @@
                                 "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
                             },
                             "frontendPort": 12901,
-                            "idleTimeoutInMinutes": 5,
-                            "probe": {
-                                "id": "[concat(variables('lbID'),'/probes/default')]"
-                            },
-                            "protocol": "Tcp"
-                        }
-                    },
-                    {
-                        "name": "visualizer-app129",
-                        "properties": {
-                            "backendAddressPool": {
-                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
-                            },
-                            "backendPort": 8129,
-                            "enableFloatingIP": false,
-                            "frontendIPConfiguration": {
-                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
-                            },
-                            "frontendPort": 8129,
                             "idleTimeoutInMinutes": 5,
                             "probe": {
                                 "id": "[concat(variables('lbID'),'/probes/default')]"
@@ -7779,25 +7589,6 @@
                         }
                     },
                     {
-                        "name": "visualizer-app130",
-                        "properties": {
-                            "backendAddressPool": {
-                                "id": "[concat(variables('lbID'), '/backendAddressPools/default')]"
-                            },
-                            "backendPort": 8130,
-                            "enableFloatingIP": false,
-                            "frontendIPConfiguration": {
-                                "id": "[concat(variables('lbID'),'/frontendIPConfigurations/default')]"
-                            },
-                            "frontendPort": 8130,
-                            "idleTimeoutInMinutes": 5,
-                            "probe": {
-                                "id": "[concat(variables('lbID'),'/probes/default')]"
-                            },
-                            "protocol": "Tcp"
-                        }
-                    },
-                    {
                         "name": "vote-app131",
                         "properties": {
                             "backendAddressPool": {
@@ -7835,7 +7626,6 @@
                             "protocol": "Tcp"
                         }
                     },
-                    
                     {
                         "name": "vote-app132",
                         "properties": {
@@ -7874,7 +7664,6 @@
                             "protocol": "Tcp"
                         }
                     },
-                    
                     {
                         "name": "vote-app133",
                         "properties": {
@@ -7913,7 +7702,6 @@
                             "protocol": "Tcp"
                         }
                     },
-                    
                     {
                         "name": "vote-app134",
                         "properties": {
@@ -7952,7 +7740,6 @@
                             "protocol": "Tcp"
                         }
                     },
-                    
                     {
                         "name": "vote-app135",
                         "properties": {
@@ -7991,7 +7778,6 @@
                             "protocol": "Tcp"
                         }
                     },
-                    
                     {
                         "name": "vote-app136",
                         "properties": {
@@ -8030,7 +7816,6 @@
                             "protocol": "Tcp"
                         }
                     },
-                    
                     {
                         "name": "vote-app137",
                         "properties": {
@@ -8069,7 +7854,6 @@
                             "protocol": "Tcp"
                         }
                     },
-                    
                     {
                         "name": "vote-app138",
                         "properties": {
@@ -8108,7 +7892,6 @@
                             "protocol": "Tcp"
                         }
                     },
-                    
                     {
                         "name": "vote-app139",
                         "properties": {
@@ -8147,7 +7930,6 @@
                             "protocol": "Tcp"
                         }
                     },
-                    
                     {
                         "name": "vote-app140",
                         "properties": {
@@ -8186,7 +7968,6 @@
                             "protocol": "Tcp"
                         }
                     },
-                    
                     {
                         "name": "vote-app141",
                         "properties": {
@@ -8225,7 +8006,6 @@
                             "protocol": "Tcp"
                         }
                     },
-                    
                     {
                         "name": "vote-app142",
                         "properties": {
@@ -8264,7 +8044,6 @@
                             "protocol": "Tcp"
                         }
                     },
-                    
                     {
                         "name": "vote-app143",
                         "properties": {
@@ -8303,7 +8082,6 @@
                             "protocol": "Tcp"
                         }
                     },
-                    
                     {
                         "name": "vote-app144",
                         "properties": {
@@ -8342,7 +8120,6 @@
                             "protocol": "Tcp"
                         }
                     },
-                    
                     {
                         "name": "vote-app145",
                         "properties": {
@@ -8381,7 +8158,6 @@
                             "protocol": "Tcp"
                         }
                     },
-                    
                     {
                         "name": "vote-app146",
                         "properties": {
@@ -8420,7 +8196,6 @@
                             "protocol": "Tcp"
                         }
                     },
-                    
                     {
                         "name": "vote-app147",
                         "properties": {
@@ -8459,7 +8234,6 @@
                             "protocol": "Tcp"
                         }
                     },
-                    
                     {
                         "name": "vote-app148",
                         "properties": {
@@ -8498,7 +8272,6 @@
                             "protocol": "Tcp"
                         }
                     },
-                    
                     {
                         "name": "vote-app149",
                         "properties": {
@@ -8537,7 +8310,6 @@
                             "protocol": "Tcp"
                         }
                     },
-                    
                     {
                         "name": "vote-app150",
                         "properties": {
@@ -8770,7 +8542,6 @@
             },
             "type": "Microsoft.Storage/storageAccounts"
         },
-        
         {
             "type": "Microsoft.Network/publicIPAddresses",
             "apiVersion": "[variables('apiVersion')]",
