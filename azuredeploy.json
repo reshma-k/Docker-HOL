@@ -132,7 +132,7 @@
             "type": "int"
         },
         "workerVMSize": {
-            "defaultValue": "Standard_D13_v2",
+            "defaultValue": "Standard_D14_v2",
             "metadata": {
                 "description": "The size of the created machines"
             },
@@ -153,7 +153,7 @@
         "JenkinsdnsNameForPublicIP": "jenkins-0-",
         "dockerSubnetName": "dockerswarm-subnet",
         "dockerSubnetPrefix": "10.0.1.0/24",
-        "vmSize": "Standard_D13_v2",
+        "vmSize": "Standard_D14_v2",
         "uniqueString": "[uniquestring(resourceGroup().id)]",
         "vnetDeploymentURI": "[concat(parameters('baseUrl'),'/nested/newvnet.json')]",
         "cloubeesDeploymnetURI": "[concat(parameters('baseUrl'),'/nested/cloudbees-jenkins-deployment.json')]",
