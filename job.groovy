@@ -1,6 +1,6 @@
 node
 {
-    docker.withRegistry('https://dtrlb-vpvk3n5huflf4.westus.cloudapp.azure.com/','dtr-login-user0'){
+    docker.withRegistry('https://dtrlb-rt5k7cqehguoy.westus.cloudapp.azure.com/','dtr-login-user0'){
        // dtr-login is a login ID in credentials 
         stage "syncing files"
         git 'https://github.com/sample/sample-app.git'
